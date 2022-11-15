@@ -1,0 +1,23 @@
+html,
+body{
+    background-color:   #171718 ;
+  
+
+}
+.row{
+    background-color: #171718 ;
+    color: gold;
+}
+
+.container{
+    background-color: #171718 ;
+    color: gold;
+}
+.logo{
+    width: 250px;
+    height: 180px;
+    display: flex;
+    left: 100px;
+}
+
+

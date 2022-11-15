@@ -10,11 +10,11 @@ table {
     width: 100%;
     height: 100%;
     text-align: center;
-    color: gold;
 }
 
 .ticket-actual {
-    background-color: #282828;
+    background-color:     #1f2124;
+    
 }
 
 .ticket-actual-numero {
@@ -27,15 +27,21 @@ table {
 
 .ticket-secundario {
     font-size: 25px;
+  
+  width: 35px;
+ 
+    
 }
-
+.secu{
+    background-color: #161515;
+    width: 35%;
+}
 
 /* Nuevo-ticket */
 
 #lblNuevoTicket {
     font-size: 70px;
 }
-
 .logo{
     width: 250px;
     height: 180px;

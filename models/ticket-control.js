@@ -2,9 +2,10 @@ const path = require('path');
 const fs   = require('fs');
 
 class Ticket {
-    constructor( numero, escritorio ) {
+    constructor( numero, escritorio, hora ) {
         this.numero = numero;
         this.escritorio = escritorio;
+        this.hora = hora;
     }
 }
 
@@ -51,10 +52,15 @@ class TicketControl {
     }
 
     siguiente() {
+        //MODIFICADO
+        let hour = new Date().getHours()
+        let minutos = new Date().getMinutes()
+        let segundos = new Date().getSeconds()
+        const hora = `${hour}:${minutos}:${segundos}`
+        console.log(hora)
         this.ultimo += 1;
-        const ticket = new Ticket( this.ultimo, null );
+        const ticket = new Ticket( this.ultimo, null, hora);
         this.tickets.push( ticket );
-
         this.guardarDB();
         return 'Ticket ' + ticket.numero;
     }
